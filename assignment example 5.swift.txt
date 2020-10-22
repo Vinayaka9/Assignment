@@ -1,0 +1,11 @@
+func pow(base : Double,power : Double) -> Double {
+       if power == 0 {
+           return 1.0
+       }
+           else{
+       var result : Double
+       result = pow(base,power)
+       return(result)
+           }  
+   }
+   print(pow(base : 2,power : 4))

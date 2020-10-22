@@ -1,0 +1,18 @@
+import Foundation
+
+let oddSum = {
+      (n :Int)
+    in
+    
+    var sum = 0
+    for item in 1...n {
+        if (item & 1 != 0) {
+  
+            sum += item
+            print(sum)
+        }
+    }
+}
+    print(oddSum(5))
+    
+    
