@@ -1,13 +1,13 @@
 import Foundation
 
 let theorem = {
-    (value1 : Double ,value2 : Double ,value3 : Double ,power : Double) 
+    (value1 : Double ,value2 : Double ,value3 : Double ,power : Double) //There should be space after comma and not before. There should not be space before colon. 
     in
     
     if power <= 2 {
         print("no n should be greater than 2")
-    }
-    else if power >= 2 {
+    } //else should beging in the same line where the if ended and not in the next line
+    else if power >= 2 { //All the statements inside a block (or flower brackets) should have one tab space more.
     var  temp1 = pow(value1 , power) + pow(value2 , power)
     var temp2 = pow(value3 , power)
     if temp1 == temp2 {
