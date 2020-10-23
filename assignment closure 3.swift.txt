@@ -1,21 +1,28 @@
 import Foundation
+
+//The name someFunction is very generic. The function shoudl be more specific (something like bottlePoem)
+//Horizontal spacing is completely awkward. It should be corrected
+
 let someFunction = {
     (num: Int )
     in
 
   var bottle = "no bottles of water"
-  if num == 0 
+  //Similar to the bottle variable above, you could have created a variable for "on the wall" since its repeated miltiple times
+  
+  if num == 0 //The common practice is to enclose the condition inside (), for e.g., if(num == 0), this is more readable
   {
     print("/(bottle) on the wall,/(bottle),ya'take one down ,ya' pass it around,'cause there are no more bottles of water on the wall!")
   }
  else
  { 
+    //Here, the string is not printed once the value becomes 0. Logic should be corrected.
   var value = num
   while value != 0 
   {
       
    print("\(value)\(bottle) on the wal,\(value)\(bottle), ya'take one down ,ya' pass it around,\(value-1)bottles of water on the wall")
-   value = value-1
+   value = value-1 //There should be space on both sides of the arithmetic operator.
 
   }
   }
