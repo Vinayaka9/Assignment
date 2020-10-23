@@ -1,11 +1,13 @@
+//You should have used recursion to solve this problem. In this case, the power value is not being decremented.
+
 func pow(base : Double,power : Double) -> Double {
        if power == 0 {
            return 1.0
        }
-           else{
-       var result : Double
-       result = pow(base,power)
+           else{ //Else should begin in the same line where the if ends.
+       var result : Double //The should not be a space before colon:
+       result = pow(base,power) //There should be a space after comma
        return(result)
            }  
    }
-   print(pow(base : 2,power : 4))
+   print(pow(base : 2,power : 4))//The should not be a space before colon: and There should be a space after comma
