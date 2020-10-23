@@ -1,7 +1,7 @@
 import Foundation
 
 let oddSum = {
-      (n :Int)
+      (n :Int) //There shoudl be space after colon and not before. Why is there an extra tab space in the beginning?
     in
     
     var sum = 0
@@ -9,7 +9,7 @@ let oddSum = {
         if (item & 1 != 0) {
   
             sum += item
-            print(sum)
+            print(sum) //Don't print the output in the core logic. Build an array with the result and return the array. The receiver can print it.
         }
     }
 }
