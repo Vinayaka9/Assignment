@@ -1,11 +1,11 @@
 import Foundation
 
 let rightJustify = {
-    (initialString : String)
+    (initialString : String) //There should not be space before :
     in
 
     var stringLength = initialString.count
-    var result = ""
+    var result = "" //After variable declaration, have a blank line. It will be easy to read
     for _ in 0...(70 - stringLength) {
         result += "\u{00a0}"
     }
